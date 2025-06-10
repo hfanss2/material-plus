@@ -1,4 +1,4 @@
-[English](https://gitee.com/iyohei/material-plus/blob/master/README.en.md)
+[English](https://gitee.com/iyohei/material-plus/blob/master/README.md)
 
 ## 主题介绍
 
