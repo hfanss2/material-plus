@@ -20,7 +20,7 @@ This topic is based on[ \[material-x\]](https://xaoxuu.com/wiki/material-x/)，T
 
 ```
 Download to themes folder
-Cut the folders' source ',' config. yml ', and' package. json 'to the root directory of the blog
+Cut the folders 'source','_config.yml', and 'package.json'to the root directory of the blog
 Open the command line and execute the following command:
 npm update
 ```
