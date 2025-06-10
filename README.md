@@ -1,37 +1,61 @@
-# material-plus
+##Theme Introduction
 
-#### 介绍
-hexo主题material-plus源文件
+This topic is based on [material-x]（ https://xaoxuu.com/wiki/material-x/ ）Theme Magic Change, Original Author [Xiaowu Blog]（ https://www.wushile.top/ ）(Currently out of maintenance), open sourced with the author's consent. This version has added some commonly used functions on the original basis
 
-#### 软件架构
-软件架构说明
+###Preview
 
+[hfanss.com](hfanss.com)
+! [Insert image description here]（ https://i-blog.csdnimg.cn/direct/8921e806b1894112b3daa6b27955cc94.png#pic_center )
 
-#### 安装教程
+##Use
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+###Download Theme
 
-#### 使用说明
+> [ https://gitee.com/iyohei/material-plus ]( https://gitee.com/iyohei/material-plus )
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+###Installation
+>git clone  https://gitee.com/iyohei/material-plus.git  
 
-#### 参与贡献
+```
+Download to themes folder
+Cut the folders' source ',' config. yml ', and' package. json 'to the root directory of the blog
+Open the command line and execute the following command:
+npm update
+```
+###Detailed explanation
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+All configurations are made in the config. yml directory at the root of the blog
 
+All internal configurations are explained in Chinese, and only a few points are emphasized below
 
-#### 特技
+1. Article page tags
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```
+---
+Title: Blog Title
+Date: March 31, 2019 15:54:38 # Write date+time
+Tags: # tags
+-Hexo Theme
+-Material-x optimized version
+- material-plus
+Categories: # Categories
+- hexo
+img:  https://blog-1252958858.file.myqcloud.com/2019/03/material-plus.png #Cover of the blog post. The local image display format is/img/* * *. jpg
+Newimg: true # Whether to display the new tag
+Zhailu: Hexo theme modified based on material-x theme, material plus theme, added some functions, integrated statistics, advertising..... #Excerpts from the article. At least 70 words, otherwise the cover will display confusion
+Comments: false # Whether to enable comments, default to true
+Toc: false # Whether to display the directory can be uniformly configured in config. yml
+---
+```
+
+2.DIY
+
+```
+Message board/source/comment/index. md
+Friendship link/source/links/index.md
+About blogger/source/bout2/index.md
+About our website/source/about/index. md
+logo、 Icon/source/img # # can be replaced directly
+```
+
+That's all for now. I can't remember too much. If you encounter any problems during use, you can also leave a message below for consultation
