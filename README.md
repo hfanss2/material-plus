@@ -1,19 +1,21 @@
-##Theme Introduction
+## Theme Introduction
 
-This topic is based on [material-x]（ https://xaoxuu.com/wiki/material-x/ ）Theme Magic Change, Original Author [Xiaowu Blog]（ https://www.wushile.top/ ）(Currently out of maintenance), open sourced with the author's consent. This version has added some commonly used functions on the original basis
+This topic is based on[ \[material-x\]](https://xaoxuu.com/wiki/material-x/)，Theme Magic Change, Original Author [Xiaowu Blog](https://www.wushile.top/), open sourced with the author's consent. This version has added some commonly used functions on the original basis
 
-###Preview
+### Preview
 
 [hfanss.com](hfanss.com)
-! [Insert image description here]（ https://i-blog.csdnimg.cn/direct/8921e806b1894112b3daa6b27955cc94.png#pic_center )
 
-##Use
+![在这里插入图片描述](https://i-blog.csdnimg.cn/img_convert/b8126947a1ee3fa1fba7860d86c2f91e.png#pic_center)
 
-###Download Theme
+
+## Use
+
+### Download Theme
 
 > [ https://gitee.com/iyohei/material-plus ]( https://gitee.com/iyohei/material-plus )
 
-###Installation
+### Installation
 >git clone  https://gitee.com/iyohei/material-plus.git  
 
 ```
@@ -22,7 +24,7 @@ Cut the folders' source ',' config. yml ', and' package. json 'to the root direc
 Open the command line and execute the following command:
 npm update
 ```
-###Detailed explanation
+### Detailed explanation
 
 All configurations are made in the config. yml directory at the root of the blog
 
@@ -51,11 +53,12 @@ Toc: false # Whether to display the directory can be uniformly configured in con
 2.DIY
 
 ```
-Message board/source/comment/index. md
-Friendship link/source/links/index.md
-About blogger/source/bout2/index.md
-About our website/source/about/index. md
-logo、 Icon/source/img # # can be replaced directly
+Message board			/source/comment/index. md
+Friendship link			/source/links/index.md
+About blogger			/source/bout2/index.md
+About our website		/source/about/index. md
+logo、 Icon				/source/img # # can be replaced directly
 ```
 
 That's all for now. I can't remember too much. If you encounter any problems during use, you can also leave a message below for consultation
+
