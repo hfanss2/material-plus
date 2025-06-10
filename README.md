@@ -1,3 +1,5 @@
+[中文](https://gitee.com/iyohei/material-plus/blob/master/README.en.md)
+
 ## Theme Introduction
 
 This topic is based on[ \[material-x\]](https://xaoxuu.com/wiki/material-x/)，Theme Magic Change, Original Author [Xiaowu Blog](https://www.wushile.top/), open sourced with the author's consent. This version has added some commonly used functions on the original basis
