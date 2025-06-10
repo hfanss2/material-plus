@@ -1,3 +1,5 @@
+[English](https://gitee.com/iyohei/material-plus/blob/master/README.en.md)
+
 ## 主题介绍
 
 本主题基于 [material-x](https://xaoxuu.com/wiki/material-x/) 主题魔改，原作者 [小吴博客](https://www.wushile.top/)（目前已失去维护） ，在征得作者同意下开源。此版本在原基础上加入了一些常用功能
