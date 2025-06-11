@@ -34,7 +34,7 @@ zhailu: 基于material-x主题魔改的hexo主题，material-plus主题，增添
 
 ```
 下载到themes文件夹
-剪切文件夹 source、_config.yml、package.json至博客根目录
+剪切内部文件夹default下的 所有内容-source文件夹、_config.yml、package.json至博客根目录
 打开命令行执行以下命令：
 npm update
 ```
