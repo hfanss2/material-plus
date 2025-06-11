@@ -178,7 +178,7 @@ sitemap:
   path: sitemap.xml
 
 # 百度统计key
-baidu_analytics_key: 4e950a5dd7243ac97e882fe04d3fa1f7
+baidu_analytics_key: 7e379e642cd39853f41b062fafa891d6
 # 百度自动推送
 baidu_push: true
 
