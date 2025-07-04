@@ -16,9 +16,11 @@ This topic is based on[ \[material-x\]](https://xaoxuu.com/wiki/material-x/)，T
 ### Download Theme
 
 > [ https://gitee.com/iyohei/material-plus ]( https://gitee.com/iyohei/material-plus )
+> [https://github.com/hfanss2/material-plus](https://github.com/hfanss2/material-plus)
 
 ### Installation
 >git clone  https://gitee.com/iyohei/material-plus.git  
+>git clone  https://github.com/hfanss2/material-plus.git
 
 ```
 Download to themes folder
