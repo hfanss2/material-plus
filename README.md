@@ -1,4 +1,4 @@
-[中文](https://gitee.com/iyohei/material-plus/blob/master/README.en.md)
+[中文](https://github.com/hfanss2/material-plus/blob/master/README.en.md)
 
 ## Theme Introduction
 
