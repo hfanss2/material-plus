@@ -1,15 +1,15 @@
 
 # >> 网站基本配置 ---------------------------------------------------------------
-
-title: 小吴博客 #网站名称/标题
-description: 提供各类原创IT技术教程与软件资讯 #网站说明
-keywords: 吴施乐的博客,凉城浪徒的博客,IT博客,成功励志,前端,Android #网站关键词（用于搜索引擎收录）
+CNAME: hfanss.com ##自定义域名，目的是解决每次提交后自定义域名失效问题
+title: 幻凡ss #网站标题
+description: 专注Java • 分享生活 • 记录人生 #网站说明
+keywords: java,IT,幻凡ss,幻凡 #网站关键词（用于搜索引擎收录,添加多个关键词请用英文逗号分隔）
 language: zh-CN #网站语言（默认中文 zh-CN即可）
 shortcut_icon: /favicon.ico #浏览器中地址栏或标签页中显示的图标，尺寸一般为16 x 16像素大小，后缀为ico格式
 icon: /img/icon.png #可放的格式可为PNG\GIF\JPEG，尺寸一般为64x64或更大
-changeTitle: 欢迎回到小吴博客 #切换标签页后更改的标题
+changeTitle: 咦，页面崩溃了！ #切换标签页后更改的标题
 copyTips: #复制网页时弹出提示窗口的内容
-  enable: true #是否启用
+  enable: false #是否启用
   title: 复制成功 #窗口标题
   content: 如需转载文章请注意声明原文出处，谢谢合作！ #提示信息
 
@@ -18,84 +18,112 @@ runtime:
   enable: true  #是否启用
   span: 本站已稳定运行：  #开头显示的文本
   year: 2018  #年
-  month: 8    #月
-  day: 22  #日
-  hour: 18  #时
-  minute: 27  #分
-  second: 00  #秒
+  month: 7  #月
+  day: 14  #日
+  hour: 01  #时
+  minute: 01  #分
+  second: 01  #秒
 
 # 网址配置
-url: https://www.wushile.top #填写你的网站域名
+url:  https://hfanss.com #填写你当前博客的网站域名 注意！！！ 域名必须正确填写，且带协议头(http://或https://)。若不填域名或填写有误则一些模块则无法使用！(比如文章分享)
 root: /     # 如果您的站点放在子目录中，请将URL设置为“http://yoursite.com/子目录名称”，将root设置为“/子目录名称/”
-permalink: article/:title.html
+permalink: :year/:title.html
 permalink_defaults:
 
-# 显示神兽图腾（纯娱乐性质，无其他实际意义）
+# 显示神兽图腾（纯娱乐性质，无其他实际意义,如需开启请关闭html压缩，否则无显示效果）
 ## 是否在网页源代码中显示神兽图腾 true为显示，false即为不显示
-totem: true
+totem: false
 
 # >> 主题配置 ---------------------------------------------------------------------
 
-## Banner与轮播图的区别是，Banner是固定在博客首页的大图，轮播图就不必赘述了。
-## 还请注意！！！ Banner和轮播图不可同时启用，否则布局会出错！
+# 轮播图配置
 
-# Banner配置
-fixed_banner: 
-  enable: false #是否启用banner
-  img: https://img.vim-cn.com/bd/b687c56f6f756ebd35070189c099c5d2ff9419.png  ## 880 x 300 px 的banner 可以填图片地址或图片在资源中的相对路径
-
-# 轮播图配置 
 ## url是每个轮播图的点击链接，如果不设置链接请填写javascript:void(0) img是轮播图图片，图片是800 x 300 px的大小banner 可以填图片地址或图片在资源中的相对路径
 ## 如果不使用轮播图时，把carousel下的配置全部注释或者删除即可
 
-carousel:
-  - url: javascript:void(0)
-    img: /img/lb_1.png
-  - url: http://shang.qq.com/wpa/qunwpa?idkey=5a27807266d30155dff493dc101246e233d1ab34b1b1c950cb0698f3e84c4330
-    img: /img/lb_2.png
-  - url: https://www.wushile.top/article/article-top.html
-    img: /img/lb_3.png  
+##carousel:
+##  - url: javascript:void(0)
+##    img: /img/banner-1.png
+##  - url: javascript:void(0)
+##    img: /img/banner-2.png
+##  - url: javascript:void(0)
+##    img: /img/banner-3.png  
+
 #导航栏logo（建议240 x 120 px像素）
-nav_logo: /img/XiaoWuBlog_logo_240x120.png
+nav_logo: /img/Blog_logo.png
 
 # 导航栏
 # 导航栏的菜单数量建议不超过八个，菜单名不宜过长。
 
 nav_menu:
-  - name: 文章 #导航栏名称
+  - name: 首页 #导航栏名称
     slug: home # 页面所在文件夹名称
     url: / #页面路径
-  - name: 归档
+  - name: 时间轴
     slug: archives
     url: /archives/index.html
-  - name: 资源
-    slug: resources
-    url: /resources/index.html
+  - name: 开源项目
+    slug: open
+    url: /tags/开源项目/index.html
   - name: 友链
     slug: links
     url: /links/index.html
-  - name: 加群
-    slug: jiaqun
-    url: /jiaqun/index.html
-  - name: 曝光台
-    slug: baoguangtai
-    url: /baoguangtai/index.html
-  - name: 关于
-    slug: about
-    url: /about/index.html
-  - name: 声明
-    slug: statement
-    url: /statement/index.html
+  - name: 留言板
+    slug: comment
+    url: /comment/index.html
+  - name: 热点
+    slug: diy
+    url: https://news.hfanss.com
+  - name: 视频
+    slug: diy
+    url: https://video.hfanss.com
+  - name: Github图床
+    slug: diy
+    url: https://pic.hfanss.com
+#  - name: 热点
+#    slug: diy #此项值为diy，代码会解析成红色，加粗，并新建标签页打开超链接
+#    url: https://news.hfanss.com
+#  - name: 工具  此项为自定义的二级目录，暂不可用，因为加出来的二级菜单不能置顶，因为不是专业前端，解决不了
+#    slug: diy
+#    list:
+#      - name: test1
+#        url: xx.com
+#      - name: test2
+#        url: xx.com
+#      - name: test3
+#        url: xx.com
+#  - name: 工具
+#    slug: diy
+#    url: /tools/index.html
+
 
 # 右边的小窗口，不想显示哪一项的注释掉对应的即可
 widgets:
   # 博主信息，显示个人头像、格言、社交信息等
   author:
     enable: true #是否启用头像 false为不显示
-    avatar: /img/author.png # 头像，如果config中已经设置avatar了，这里可以不用写
-    title: 凉 城 浪 徒 # 博客名、头衔等等，居中显示
-    motto: 一名满腔热血的IT技术爱好者 # 格言座右铭等等
-    social: true # 是否显示社交信息
+    avatar: /img/author.jpg # 头像，如果config中已经设置avatar了，这里可以不用写
+    title: 幻凡ss # 博客名、头衔等等，居中显示
+    motto:  IT小青年 | hfanss.com # 格言座右铭等等
+    conum: '>50' #评论数 --------------------------------------------------------------------------------------------------< 更新条目
+
+
+  # -----------------------------------------------------------------------------------------------------------------------< 更新条目
+  # 社交信息栏 
+  social: 
+    enable: true # 是否在头像栏下方显示社交信息栏
+
+  # 设置社交信息请打开 博客根目录\themes\material-plus\layout\_widget\author.ejs 文件进行修改 
+
+  # 公告
+  ## name是公告标题 content是公告的内容 type是在弹出窗口的上方显示的图标，可选类型有： success (成功) 、error (错误)、 warning (警告) 、 info (信息)，
+  ## type不填即不会显示图标
+  ## 在填写公告内容时不要换行，以免编译出错，换行请用换行符\n代替。例子：
+  #notice:
+  #- name: 博客夜间模式用法 
+  #  content: 本站支持夜间模式，以下是各个快捷键的用法\n\nAlt+Z：开启夜间模式  Alt+X：关闭夜间模式\nAlt+↑：增加亮度 Alt+↓：降低亮度
+  #  type: success
+
 
   # 显示文章分类
   categories: true
@@ -104,86 +132,52 @@ widgets:
   tagcloud: true
 
   # 显示目录（在文章中设置toc:false可以隐藏单篇文章的目录）
-  toc: true
+  toc: false
 
   # 显示网易云歌单
-  musicid:  #填写歌单号
+  musicid:  false #填写歌单号，不填就是不用
 
   # 热门推荐
+  ## 若不想显示侧栏的热门推荐，注释即可
+
   links:
-  - name: 博客背景美化
+  - name: Maupassant主题优化、屠城hexo主题优化版
     avatar: /img/hotrec-1.png
-    url: /article/201810212028.html
+    url: /2018/Maupassant主题、屠城主题优化版.html
 
-  - name: Web开发和移动开发两种行业的选择
+  - name: 腾讯云COS图床制作
     avatar: /img/hotrec-2.png
-    url: /article/201810031737.html
+    url: /2018/腾讯云COS图床制作.html
 
-  - name: 小吴原创-Martial X实现文章分享
+  - name: 码云+hexo搭建个性博客
     avatar: /img/hotrec-3.png
-    url: /article/201811192203.html
+    url: /2018/码云+hexo搭建个性博客.html
 
-  - name: 介绍下我的工作室
+  - name: hexo博客常用插件及教程
     avatar: /img/hotrec-all.png
-    url: /article/201810202211.html
+    url: /2018/hexo博客常用插件及教程.html
 
-  - name: 现在的电脑还需要安装杀毒软件吗？
-    avatar: /img/hotrec-all.png
-    url: /article/201812061317.html
-
-  - name: 网红“面筋哥”被嘲讽事件点评
-    avatar: /img/hotrec-all.png
-    url: /article/201809161905.html
-
-  - name: js实现网站的两个小功能
-    avatar: /img/hotrec-all.png
-    url: /article/201811031638.html
-
-  - name: 普通电脑能否当做服务器正常使用？
-    avatar: /img/hotrec-all.png
-    url: /article/201810151309.html
-
-
-# 公告
-## name是公告标题 content是公告的内容 type是在弹出窗口的上方显示的图标，可选类型有： success (成功) 、error (错误)、 warning (警告) 、 info (信息)，
-## type不填即不会显示图标
-## 在填写公告内容时不要换行，以免编译出错，换行请用换行符\n代替。
-  notice:
-  - name: 博客夜间模式用法 
-    content: 本站支持夜间模式，以下是各个快捷键的用法\n\nAlt+Z：开启夜间模式  Alt+X：关闭夜间模式\nAlt+↑：增加亮度 Alt+↓：降低亮度
-    type: 
-  - name: 本站备用链接
-    content: 本站备用链接：https://sub.wushile.top
-    type: 
 
 # 顶部公告
 topnotice:
   enable: true #是否启用公告 false为不启用
   img: /img/top-notice-img.png #顶部公告图标地址 默认为top-notice-img.png（小喇叭图标）
-  content: 2月18日起博客更新周期可能会变长甚至暂停更新，届时会再次进行通知 #顶部公告内容，字数不宜过长
-  btn_name: 查看详情  #链接名称  如果不填写链接名称，则公告后面的链接文字不会显示
-  btn_link: /article/26.html #文字链接
+  content: 清理了一下所有的图片地址。。。  \‘▽′/ 
+  link: /topmd/index.html #javascript:void(0) #文字链接 如果不设置链接请填写javascript:void(0)
 
 # 底部版权信息
 copyrightIcon: true #显示版权C图标
-copyright: 2019 小吴博客 版权所有 #版权信息
+copyright: 2018 幻凡ss #版权信息
 
-# 底部友链推荐
-bottomlink: 
-  - name: xaoxuu'blog
-    url: https://blog.xaoxuu.com
-  - name: 小俊博客
-    url: https://www.xjdog.cn
-  - name: MicDZ's blog
-    url: https://www.micdz.cn/
+# 底部链接  
+bottomlink: true
+baidutongjiurl: https://tongji.baidu.com/main/overview/10000687863/overview/index?siteId=xxxxxx  ##百度统计网址
 
-# 启用粒子网背景特效
-bg_nest:  
-  enable: false    #是否启用
-  color: 0,0,0    #线条颜色 (RGB数值)
-  opacity: 0.5    #线条透明度（值的范围为0~1）
-  zIndex: -1    #所在层的位置 （默认-1即可）
-  count: 150      #线条的总数量
+# ----------------------------------------------------------------------------------------------------------------------< 更新条目
+# 是否在底部显示图片，图片请到img文件夹替换，制作尺寸为640x640px
+footerpic: false
+
+
 
 # 文章摘录配置 （为了能更好的配置摘录，建议文章摘录的内容不要少于30个字符）
 ## 设置在PC端显示的文章摘录长度，单位：字符
@@ -194,17 +188,22 @@ zhailu_length_phone: 80
 # 文章分享配置
 share: 
   # 分享标题
-  title: 小吴博客 #可以是博客名称或者个人昵称
-  pic: https://www.wushile.top/img/XiaoWuBlog_logo_240x120.png #可以填网站logo或导航栏logo图片地址
+  title:  幻凡ss #可以是博客名称或者个人昵称
+  pic:  /img/author.jpg #可以填网站logo或导航栏logo图片地址 必须填绝对路径
 
 # 网站地图
 sitemap: 
   path: sitemap.xml
 
 # 百度统计key
-baidu_analytics_key: 5090deb2c048d61b7e93d6f65edd5f96
+baidu_analytics_key: 7e379e64xxxxxx
 # 百度自动推送
 baidu_push: true
+baidu_url_submit:
+  count: 10              # 提交最新的多少个链接
+  host: hfanss.com    # 在百度站长平台中添加的域名
+  token: Vpxxxxxx      # 秘钥
+  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
 
 # 推荐文章
 recommended_posts:
@@ -220,14 +219,21 @@ recommended_posts:
 
 # 评论设置
 ## 来必力评论 
-livere_uid: MTAyMC8zOTcwNC8xNjIzMQ== ##填写在来在必力平台注册并申请来的UID
+#livere_uid:  ##填写在来在必力平台注册并申请来的UID
 
 ## 畅言评论
 # changyan: 
 #   enable: true
-#   appId: cytiBEfFo
-#   conf: prod_0e53369135c947c1e08e66a7f10b5d50
-
+#   appId: 
+#   conf: 
+## valine评论
+valine: 
+  enable: true
+  appId: 5GMxxxxxx
+  appkey: f6xxxxxx
+  avatar: monsterid ##默认头像 参考 https://valine.js.org/avatar.html
+  placeholder: 　 ## 留言板预设内容
+  pageSize: 10 ##每页显示条数
 # 搜索配置 
 ## Search 确保_config中只有一个search，否则会冲突。
 search:
@@ -316,35 +322,51 @@ theme: material-plus
 less:
   compress: truelaurel
 
-# HTML压缩
-html_minifier:  
-  removeComments: true
-  collapseWhitespace: true
-  collapseBooleanAttributes: true
-  removeEmptyAttributes: true
-  removeScriptTypeAttributes: true
-  removeStyleLinkTypeAttributes: true
-  
-# 图片压缩
-imagemin:
-  enable: true
-  interlaced: false
-  multipass: false
-  optimizationLevel: 2
-  pngquant: false
-  progressive: false为不启用
-
+# -----------------------------------------------------------------------------------------------------------------------< 更新条目
+## 代码压缩 
+all_minifier: false
+image_minifier:
+  enable: false
+css_minifier: 
+  enable: false
 
 # 部署
 ## 参考文档: https://hexo.io/docs/deployment.html
+
+
+beian: 豫ICP备18024944号-1
+qq: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes
+mail: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
+weixin:
+github: https://github.com/hfanss2/
+csdn: https://me.csdn.net/q2158798
+## 单平台部署
 deploy:
-  type: git
-  repo:
-    github: git@github.com:wushile/wushile.github.io.git,master
-    coding: git@git.dev.tencent.com:wesley184/wesley184.git,master
-
-
-# deploy:
-#   type: git    
-#   repository: #你的SSH地址
-#   branch: master
+# coding
+- type: git    
+  repository: git@e.coding.net:HFanss/hfanss.git
+  branch: master
+# github
+- type: git
+  repository: git@github.com:hfanss2/hfanss.git
+  branch: main
+## 码云
+- type: git
+  repository: https://gitee.com/iyohei/iyohei.git
+  branch: main
+  ##百度主动推送
+- type: baidu_url_submitter 
+##  百度ftp
+#- type: ftpsync 
+#  host: hfanss.ftp-gz01.bcehost.com
+#  user: hfanss
+#  pass: xxxxxx
+#  remote: /webroot/
+#  port: 8010
+#  verbose: true
+## 多平台部署
+# deploy: 
+#   type: git
+#   repo:
+#     github: git@xxx.com:xxx/xxx.git,master
+#     coding: 

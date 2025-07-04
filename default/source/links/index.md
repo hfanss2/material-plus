@@ -8,18 +8,17 @@ dtime: false
 toc: false
 zdyhr: false
 ---
-<center><font size=6>友 链</center></br>
+# 友 链
+
+</br>
 
 
 |头像|名称|网站
 |:-:|:-:|:-:|
-|<img style="margin:5px auto;" width="50px" src="https://blog-1252958858.file.myqcloud.com/2020/11/zhaojun.jpg">|赵俊|http://www.zhaojun.im/|
 |<img style="margin:5px auto;" width="50px" src="https://www.iyouhun.com/content/uploadfile/202006/youhun.jpg">|游魂|https://www.iyouhun.com/|
-|<img style="margin:5px auto;" width="50px" src="https://cdn.jsdelivr.net/gh/honjun/ImageHosting/sina/006bYVyvgy1ftand2qurdj303c03cdfv.jpg">|hojun|http://www.hojun.cn/|
 |<img style="margin:5px auto;" width="50px" src="https://blog.wzdxy.com/images/zchi.jpg">|网中的小鱼|https://blog.wzdxy.com/|
 |<img style="margin:5px auto;" width="50px" src="https://sxxkearth.github.io/img/avatar.svg">|嗜血星空earth|https://sxxkearth.github.io|
 |<img style="margin:5px auto;" width="50px" src="https://q2.qlogo.cn/headimg_dl?dst_uin=473989356&spec=100">|王旭阳个人博客|https://wxy97.com/|
-|<img style="margin:5px auto;" width="50px" src="https://www.79bk.cn/image/logo.png">|乔越博客|https://www.79bk.cn/|
 <br>
 ### 博主会定期清理无用友链，如误删请@博主
 (前段时间删了一些，网站都打不开了，可以看出来都是一时兴起玩一玩)

@@ -8,13 +8,21 @@
 					<ul class='h-list'>
                         <% if (config.nav_menu) { %>
     						<% (config.nav_menu || []).forEach(function(value){ %>
-
-    							<!-- 导航栏图标和菜单 -->
-    							<li>
-    								<a class='nav-<%=value.slug%> flat-box' href='<%=url_for(value.url)%>'>
-    									<%=value.name%>
-    								</a>
-    							</li>
+									<!-- 导航栏图标和菜单 -->
+									<% if (value.slug !== "diy") { %>
+										<li>
+											<a class='nav-<%=value.slug%> flat-box' href='<%=url_for(value.url)%>'>
+												<%=value.name%>
+											</a>
+										</li>
+									<% } %>
+									<% if (value.slug === "diy") { %>
+										<li>
+											<a class='nav-<%=value.slug%> flat-box' target='_blank' style='color: red; font-weight: bold;' href='<%=value.url%>'>
+												<%=value.name%>
+											</a>
+										</li>
+									<% } %>
     							<!-- <img class="hot_gif" src="/img/hot.gif"> -->
     						<%})%>
         			 <% } %>

@@ -41,13 +41,13 @@ totem: false
 ## url是每个轮播图的点击链接，如果不设置链接请填写javascript:void(0) img是轮播图图片，图片是800 x 300 px的大小banner 可以填图片地址或图片在资源中的相对路径
 ## 如果不使用轮播图时，把carousel下的配置全部注释或者删除即可
 
-#carousel:
-#  - url: javascript:void(0)
-#    img: /img/banner-1.png
-#  - url: javascript:void(0)
-#    img: /img/banner-2.png
-#  - url: javascript:void(0)
-#    img: /img/banner-3.png  
+##carousel:
+##  - url: javascript:void(0)
+##    img: /img/banner-1.png
+##  - url: javascript:void(0)
+##    img: /img/banner-2.png
+##  - url: javascript:void(0)
+##    img: /img/banner-3.png  
 
 #导航栏logo（建议240 x 120 px像素）
 nav_logo: /img/Blog_logo.png
@@ -71,6 +71,31 @@ nav_menu:
   - name: 留言板
     slug: comment
     url: /comment/index.html
+  - name: 热点
+    slug: diy
+    url: https://news.hfanss.com
+  - name: 视频
+    slug: diy
+    url: https://video.hfanss.com
+  - name: Github图床
+    slug: diy
+    url: https://pic.hfanss.com
+#  - name: 热点
+#    slug: diy #此项值为diy，代码会解析成红色，加粗，并新建标签页打开超链接
+#    url: https://news.hfanss.com
+#  - name: 工具  此项为自定义的二级目录，暂不可用，因为加出来的二级菜单不能置顶，因为不是专业前端，解决不了
+#    slug: diy
+#    list:
+#      - name: test1
+#        url: xx.com
+#      - name: test2
+#        url: xx.com
+#      - name: test3
+#        url: xx.com
+#  - name: 工具
+#    slug: diy
+#    url: /tools/index.html
+
 
 # 右边的小窗口，不想显示哪一项的注释掉对应的即可
 widgets:
@@ -93,20 +118,21 @@ widgets:
   # 公告
   ## name是公告标题 content是公告的内容 type是在弹出窗口的上方显示的图标，可选类型有： success (成功) 、error (错误)、 warning (警告) 、 info (信息)，
   ## type不填即不会显示图标
-  ## 在填写公告内容时不要换行，以免编译出错，换行请用换行符\n代替。
+  ## 在填写公告内容时不要换行，以免编译出错，换行请用换行符\n代替。例子：
   #notice:
   #- name: 博客夜间模式用法 
   #  content: 本站支持夜间模式，以下是各个快捷键的用法\n\nAlt+Z：开启夜间模式  Alt+X：关闭夜间模式\nAlt+↑：增加亮度 Alt+↓：降低亮度
-  #  type: 
+  #  type: success
+
 
   # 显示文章分类
   categories: true
 
   # 显示云标签
-  tagcloud: false
+  tagcloud: true
 
   # 显示目录（在文章中设置toc:false可以隐藏单篇文章的目录）
-  toc: true
+  toc: false
 
   # 显示网易云歌单
   musicid:  false #填写歌单号，不填就是不用
@@ -136,8 +162,8 @@ widgets:
 topnotice:
   enable: true #是否启用公告 false为不启用
   img: /img/top-notice-img.png #顶部公告图标地址 默认为top-notice-img.png（小喇叭图标）
-  content: 我胡汉三又回来了  \‘▽′/ 
-  link: https://hfanss.com/2020/%E6%B6%88%E5%A4%B1%E7%9A%84%E6%88%91%E5%8F%88%E5%9B%9E%E6%9D%A5%E4%BA%86.html #javascript:void(0) #文字链接 如果不设置链接请填写javascript:void(0)
+  content: 清理了一下所有的图片地址。。。  \‘▽′/ 
+  link: /topmd/index.html #javascript:void(0) #文字链接 如果不设置链接请填写javascript:void(0)
 
 # 底部版权信息
 copyrightIcon: true #显示版权C图标
@@ -145,21 +171,13 @@ copyright: 2018 幻凡ss #版权信息
 
 # 底部链接  
 bottomlink: true
-baidutongjiurl: https://tongji.baidu.com/web/welcome/ico?s=4e950a5dd7243ac97e882fe04d3fa1f7  ##百度统计网址
+baidutongjiurl: https://tongji.baidu.com/main/overview/10000687863/overview/index?siteId=xxxxxx  ##百度统计网址
 
 # ----------------------------------------------------------------------------------------------------------------------< 更新条目
 # 是否在底部显示图片，图片请到img文件夹替换，制作尺寸为640x640px
 footerpic: false
 
-# 是否在底部显示鸣谢栏目
-## 若不想显示注释即可
-# footerthank: 
-#   - name: HEXO
-#     url: https://hexo.io
-#   - name: MaterialPlus
-#     url: https://mp.wushile.top 
-#   - name: Coding
-#     url: https://www.coding.net
+
 
 # 文章摘录配置 （为了能更好的配置摘录，建议文章摘录的内容不要少于30个字符）
 ## 设置在PC端显示的文章摘录长度，单位：字符
@@ -178,9 +196,14 @@ sitemap:
   path: sitemap.xml
 
 # 百度统计key
-baidu_analytics_key: 7e379e642cd39853f41b062fafa891d6
+baidu_analytics_key: 7e379e64xxxxxx
 # 百度自动推送
 baidu_push: true
+baidu_url_submit:
+  count: 10              # 提交最新的多少个链接
+  host: hfanss.com    # 在百度站长平台中添加的域名
+  token: Vpxxxxxx      # 秘钥
+  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
 
 # 推荐文章
 recommended_posts:
@@ -206,8 +229,8 @@ recommended_posts:
 ## valine评论
 valine: 
   enable: true
-  appId: 5GMAO3V5MqR9DTfMnd73m8zT-gzGzoHsz
-  appkey: f6Ve1tpYqYSBefe5xp0OCKxR
+  appId: 5GMxxxxxx
+  appkey: f6xxxxxx
   avatar: monsterid ##默认头像 参考 https://valine.js.org/avatar.html
   placeholder: 　 ## 留言板预设内容
   pageSize: 10 ##每页显示条数
@@ -315,26 +338,29 @@ beian: 豫ICP备18024944号-1
 qq: https://wpa.qq.com/msgrd?v=3&uin=2158798&site=qq&menu=yes
 mail: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=8JiWkZ6DsJafiJ2RmZzek5_d
 weixin:
-github: https://github.com/hfanss/
+github: https://github.com/hfanss2/
 csdn: https://me.csdn.net/q2158798
 ## 单平台部署
 deploy:
 # coding
-#- type: git    
-#  repository: git@e.coding.net:HFanss/hfanss.git
-#  branch: master
+- type: git    
+  repository: git@e.coding.net:HFanss/hfanss.git
+  branch: master
+# github
 - type: git
-  repository: https://github.com/hfanss2/hfanss.git
+  repository: git@github.com:hfanss2/hfanss.git
   branch: main
 ## 码云
-#- type: git
-#  repository: https://gitee.com/iyohei/iyohei.git
-#  branch: dev
+- type: git
+  repository: https://gitee.com/iyohei/iyohei.git
+  branch: main
+  ##百度主动推送
+- type: baidu_url_submitter 
 ##  百度ftp
 #- type: ftpsync 
 #  host: hfanss.ftp-gz01.bcehost.com
 #  user: hfanss
-#  pass: 533520
+#  pass: xxxxxx
 #  remote: /webroot/
 #  port: 8010
 #  verbose: true
