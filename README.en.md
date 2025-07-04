@@ -1,4 +1,4 @@
-[English](https://gitee.com/iyohei/material-plus/blob/master/README.md)
+[English](https://github.com/hfanss2/material-plus/blob/master/README.md)
 
 ## 主题介绍
 
@@ -14,10 +14,14 @@
 
 ### 下载主题
 
-> [https://gitee.com/iyohei/material-plus](https://gitee.com/iyohei/material-plus)
+> [ https://gitee.com/iyohei/material-plus ]( https://gitee.com/iyohei/material-plus )
+
+> [https://github.com/hfanss2/material-plus](https://github.com/hfanss2/material-plus)
+
 
 ### 安装
->git clone https://gitee.com/iyohei/material-plus.git 
+>git clone  https://gitee.com/iyohei/material-plus.git  
+>git clone  https://github.com/hfanss2/material-plus.git
 
 ```
 下载到themes文件夹
